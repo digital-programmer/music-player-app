@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/artist.css" />
+    <title>Artist</title>
+  </head>
+  <body>
+    <!-- ----------------------Heading Section ------------------------->
+    <header class="flex valign">
+      <div id="header__content_left" class="flex valign">
+        <img
+          src="./assets/images/icons/logo.svg"
+          alt="company logo"
+          id="company__logo"
+        />
+        <div id="company__name">
+          Ninja<br />
+          <span>Studio</span>
+        </div>
+        <div id="header__heart"><i class="fas fa-bookmark"></i></div>
+        <div id="favourite__text">Favourites</div>
+      </div>
+      <div id="header__content_right" class="flex valign">
+        <div id="search__bar">
+          <form class="flex valign">
+            <div>
+              <i id="search__icon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <input
+              type="text"
+              name="search"
+              id="searchBar"
+              placeholder="Search"
+            />
+            <div>
+              <i id="microphone__icon" class="fa-solid fa-microphone"></i>
+            </div>
+          </form>
+        </div>
+        <div id="bell__icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div id="user__profile">
+          <img
+            src="./assets/images/icons/defaultUser.jpeg"
+            alt="default user profile icon"
+          />
+        </div>
+        <div id="menu-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="header__queue">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" id="menu-toggle-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="menu">
+            <div id="sidebar__content" class="flex">
+              <div id="sidebar__header" class="flex">
+                <h2 class="queue__heading">Queue</h2>
+                <div class="queue__special flex">
+                  <p class="queue__text">Queue</p>
+                  <div class="queue__menu dropdown">
+                    <a><i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu" id="queue__menu">
+                      <p>Playlists</p>
+                      <p>Favourite Songs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="sidebar__main">
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">01</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/believer.jpg"
+                        alt="believer"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Believer</h3>
+                      <p class="queue__song_artist">Imagine Dragons</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">02</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/blankspace.jpg"
+                        alt="Blank Space"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Blank Space</h3>
+                      <p class="queue__song_artist">Taylor Swift</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">
+                      <i class="fas fa-align-right"></i>
+                    </div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/humnava.jpeg"
+                        alt="humnava"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Humnava Mere</h3>
+                      <p class="queue__song_artist">Jubin Nautiyal</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">04</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/onmyway.jpg"
+                        alt="on my way"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">On My Way</h3>
+                      <p class="queue__song_artist">Alan Walker</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">05</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/payphone.jpg"
+                        alt="Payphone"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Payphone</h3>
+                      <p class="queue__song_artist">Maroon 5</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">06</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/raatan.jpeg"
+                        alt="raatan"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Raatan Lambiyan</h3>
+                      <p class="queue__song_artist">Tanishk Baghchi</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">07</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/vaaste.jpeg"
+                        alt="Vaaste"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Vaaste</h3>
+                      <p class="queue__song_artist">Dhvani Bhanushali</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">08</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/alone.jpg"
+                        alt="alone"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Alone</h3>
+                      <p class="queue__song_artist">Alan Walker</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">09</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/fireworks.jpg"
+                        alt="fireworks"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Fireworks</h3>
+                      <p class="queue__song_artist">Katy Perry</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">10</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/lutgaye.jpeg"
+                        alt="Lut Gaye"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Lut Gaye</h3>
+                      <p class="queue__song_artist">Jubin Nautiyal</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">11</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/thunder.jpg"
+                        alt="Thunder"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Thunder</h3>
+                      <p class="queue__song_artist">Imagine Dragons</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">12</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/badhabits.jpg"
+                        alt="Bad Habits"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Bad Habits</h3>
+                      <p class="queue__song_artist">Ed Sheeran</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">01</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/believer.jpg"
+                        alt="believer"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Believer</h3>
+                      <p class="queue__song_artist">Imagine Dragons</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">02</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/blankspace.jpg"
+                        alt="Blank Space"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Blank Space</h3>
+                      <p class="queue__song_artist">Taylor Swift</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">03</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/humnava.jpeg"
+                        alt="humnava"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Humnava Mere</h3>
+                      <p class="queue__song_artist">Jubin Nautiyal</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">04</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/onmyway.jpg"
+                        alt="on my way"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">On My Way</h3>
+                      <p class="queue__song_artist">Alan Walker</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">05</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/payphone.jpg"
+                        alt="Payphone"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Payphone</h3>
+                      <p class="queue__song_artist">Maroon 5</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">06</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/raatan.jpeg"
+                        alt="raatan"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Raatan Lambiyan</h3>
+                      <p class="queue__song_artist">Tanishk Baghchi</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">07</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/vaaste.jpeg"
+                        alt="Vaaste"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Vaaste</h3>
+                      <p class="queue__song_artist">Dhvani Bhanushali</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">08</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/alone.jpg"
+                        alt="alone"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Alone</h3>
+                      <p class="queue__song_artist">Alan Walker</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">09</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/fireworks.jpg"
+                        alt="fireworks"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Fireworks</h3>
+                      <p class="queue__song_artist">Katy Perry</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">10</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/lutgaye.jpeg"
+                        alt="Lut Gaye"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Lut Gaye</h3>
+                      <p class="queue__song_artist">Jubin Nautiyal</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">11</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/thunder.jpg"
+                        alt="Thunder"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Thunder</h3>
+                      <p class="queue__song_artist">Imagine Dragons</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+                <div class="song flex valign">
+                  <div class="song__details flex valign">
+                    <div class="queue__number">12</div>
+                    <div class="queue__image">
+                      <img
+                        src="./assets/images/songs/badhabits.jpg"
+                        alt="Bad Habits"
+                        height="50px"
+                        width="50px"
+                      />
+                    </div>
+                    <div class="queue__details">
+                      <h3 class="queue__song_name">Bad Habits</h3>
+                      <p class="queue__song_artist">Ed Sheeran</p>
+                    </div>
+                  </div>
+                  <div class="heart__symbol">
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!------------------------ Main section ---------------------------->
+    <main id="main__artist" class="flex">
+      <section id="artist__main__content">
+        <!------------------ Artist intro section ---------------------->
+        <section id="artist__section" class="flex valign">
+          <div class="artist__image">
+            <img
+              src="./assets/images/artists/AlanWalkerArtistCover.jpg"
+              alt="Alan Walker"
+            />
+          </div>
+          <div class="artist__details">
+            <div class="artist__intro flex">
+              <h3 class="name__artist">Alan Walker</h3>
+              <p class="followers">115M Followers</p>
+            </div>
+            <p class="artist__short__desc">Norwegian DJ and Producer</p>
+            <p class="artist__long__desc">
+              Continuously delivering thumping beats and hypnotic records, Alan
+              Walker is truly a force to be reckoned with. With over 115 million
+              followers across his social platforms, 8.7 billion YouTube views.
+            </p>
+            <div class="button__section flex valign">
+              <a href="#music__player">
+                <div class="button__play flex valign halign">Play All</div>
+              </a>
+              <div class="follow__text">Follow</div>
+            </div>
+            <div class="artist__data">247 Tracks | 128 Albums</div>
+          </div>
+        </section>
+        <!------------------ Artist Song List -------------------------->
+        <section id="artist__song_list" class="flex">
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">01</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/onmyway.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">On My Way</h3>
+                <p class="artist__album_name">Rosie Lowie</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">02</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/faded.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Faded</h3>
+                <p class="artist__album_name">Flume</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">03</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/alone.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Alone</h3>
+                <p class="artist__album_name">Else</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">04</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/onmyway.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">On My Way</h3>
+                <p class="artist__album_name">Rosie Lowie</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">05</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/faded.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Faded</h3>
+                <p class="artist__album_name">Flume</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">06</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/alone.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Alone</h3>
+                <p class="artist__album_name">Else</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">07</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/onmyway.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">On My Way</h3>
+                <p class="artist__album_name">Rosie Lowie</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">08</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/faded.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Faded</h3>
+                <p class="artist__album_name">Flume</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">09</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/alone.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Alone</h3>
+                <p class="artist__album_name">Else</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">10</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/onmyway.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">On My Way</h3>
+                <p class="artist__album_name">Rosie Lowie</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">11</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/faded.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Faded</h3>
+                <p class="artist__album_name">Flume</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="artist__album_song flex valign">
+            <div class="left__side flex valign">
+              <div class="artist__song_number">12</div>
+              <div class="artist__song_image">
+                <img src="./assets/images/songs/alone.jpg" />
+              </div>
+              <div class="artist__song_details">
+                <h3 class="artist__song_name">Alone</h3>
+                <p class="artist__album_name">Else</p>
+              </div>
+            </div>
+            <div class="right__side flex valign">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!----------------------- Sidebar -------------------------------->
+      <aside id="artist__sidebar" class="flex">
+        <!--------------- Similar Artist section ----------------------->
+        <section id="similar__artists">
+          <div id="similar__artists_content">
+            <div id="similar__artist_header" class="flex">
+              <h2 class="queue__heading">Similar Artists</h2>
+              <div class="queue__special flex">
+                <p class="queue__text">View All</p>
+              </div>
+            </div>
+            <div id="similar__artist_main" class="flex">
+              <div class="similar__artist flex valign">
+                <div class="similar__artist__image">
+                  <img src="./assets/images/artists/Maroon5Cover.jpg" />
+                </div>
+                <div class="similar__artist_name">
+                  <h3 class="similar__artist__name">Maroon 5</h3>
+                  <p class="similar__artist__type">Pop Band</p>
+                </div>
+                <div class="similar__artist_icon flex">
+                  <div class="similar__artist__show_more_icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                  <div class="similar__artist__time">4:44</div>
+                </div>
+              </div>
+              <div class="similar__artist flex valign">
+                <div class="similar__artist__image">
+                  <img src="./assets/images/artists/TaylorSwiftCover.jpg" />
+                </div>
+                <div class="similar__artist_name">
+                  <h3 class="similar__artist__name">Taylor Swift</h3>
+                  <p class="similar__artist__type">Pop Singer</p>
+                </div>
+                <div class="similar__artist_icon flex">
+                  <div class="similar__artist__show_more_icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                  <div class="similar__artist__time">2:44</div>
+                </div>
+              </div>
+              <div class="similar__artist flex valign">
+                <div class="similar__artist__image">
+                  <img src="./assets/images/artists/imagineDragonsCover.jpg" />
+                </div>
+                <div class="similar__artist_name">
+                  <h3 class="similar__artist__name">Imagine Dragons</h3>
+                  <p class="similar__artist__type">Rock Band</p>
+                </div>
+                <div class="similar__artist_icon flex">
+                  <div class="similar__artist__show_more_icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                  <div class="similar__artist__time">5:44</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--------------------- Recently Played ------------------------->
+        <section id="recently__played">
+          <div id="artist__sidebar__content" class="flex">
+            <div id="sidebar__header" class="flex">
+              <h2 class="queue__heading">Recently Played</h2>
+              <div class="queue__special flex">
+                <p class="queue__text">View All</p>
+              </div>
+            </div>
+            <div id="sidebar__main">
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">01</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/believer.jpg"
+                      alt="believer"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Believer</h3>
+                    <p class="queue__song_artist">Imagine Dragons</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">02</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/blankspace.jpg"
+                      alt="Blank Space"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Blank Space</h3>
+                    <p class="queue__song_artist">Taylor Swift</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">03</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/humnava.jpeg"
+                      alt="humnava"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Humnava Mere</h3>
+                    <p class="queue__song_artist">Jubin Nautiyal</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">04</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/onmyway.jpg"
+                      alt="on my way"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">On My Way</h3>
+                    <p class="queue__song_artist">Alan Walker</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">05</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/payphone.jpg"
+                      alt="Payphone"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Payphone</h3>
+                    <p class="queue__song_artist">Maroon 5</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">06</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/raatan.jpeg"
+                      alt="raatan"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Raatan Lambiyan</h3>
+                    <p class="queue__song_artist">Tanishk Baghchi</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">07</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/vaaste.jpeg"
+                      alt="Vaaste"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Vaaste</h3>
+                    <p class="queue__song_artist">Dhvani Bhanushali</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">08</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/alone.jpg"
+                      alt="alone"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Alone</h3>
+                    <p class="queue__song_artist">Alan Walker</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">09</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/fireworks.jpg"
+                      alt="fireworks"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Fireworks</h3>
+                    <p class="queue__song_artist">Katy Perry</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">10</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/lutgaye.jpeg"
+                      alt="Lut Gaye"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Lut Gaye</h3>
+                    <p class="queue__song_artist">Jubin Nautiyal</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">11</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/thunder.jpg"
+                      alt="Thunder"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Thunder</h3>
+                    <p class="queue__song_artist">Imagine Dragons</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">12</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/badhabits.jpg"
+                      alt="Bad Habits"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Bad Habits</h3>
+                    <p class="queue__song_artist">Ed Sheeran</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">01</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/believer.jpg"
+                      alt="believer"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Believer</h3>
+                    <p class="queue__song_artist">Imagine Dragons</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">02</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/blankspace.jpg"
+                      alt="Blank Space"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Blank Space</h3>
+                    <p class="queue__song_artist">Taylor Swift</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">03</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/humnava.jpeg"
+                      alt="humnava"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Humnava Mere</h3>
+                    <p class="queue__song_artist">Jubin Nautiyal</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">04</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/onmyway.jpg"
+                      alt="on my way"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">On My Way</h3>
+                    <p class="queue__song_artist">Alan Walker</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">05</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/payphone.jpg"
+                      alt="Payphone"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Payphone</h3>
+                    <p class="queue__song_artist">Maroon 5</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">06</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/raatan.jpeg"
+                      alt="raatan"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Raatan Lambiyan</h3>
+                    <p class="queue__song_artist">Tanishk Baghchi</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">07</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/vaaste.jpeg"
+                      alt="Vaaste"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Vaaste</h3>
+                    <p class="queue__song_artist">Dhvani Bhanushali</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">08</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/alone.jpg"
+                      alt="alone"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Alone</h3>
+                    <p class="queue__song_artist">Alan Walker</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">09</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/fireworks.jpg"
+                      alt="fireworks"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Fireworks</h3>
+                    <p class="queue__song_artist">Katy Perry</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">10</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/lutgaye.jpeg"
+                      alt="Lut Gaye"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Lut Gaye</h3>
+                    <p class="queue__song_artist">Jubin Nautiyal</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">11</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/thunder.jpg"
+                      alt="Thunder"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Thunder</h3>
+                    <p class="queue__song_artist">Imagine Dragons</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+              <div class="song flex valign">
+                <div class="song__details flex valign">
+                  <div class="queue__number">12</div>
+                  <div class="queue__image">
+                    <img
+                      src="./assets/images/songs/badhabits.jpg"
+                      alt="Bad Habits"
+                      height="50px"
+                      width="50px"
+                    />
+                  </div>
+                  <div class="queue__details">
+                    <h3 class="queue__song_name">Bad Habits</h3>
+                    <p class="queue__song_artist">Ed Sheeran</p>
+                  </div>
+                </div>
+                <div class="heart__symbol">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+    <!-------------------------- Footer ---------------------------------->
+    <footer id="artist_music__player">
+      <div id="music__player_content" class="flex valign wrap">
+        <div id="music__player_details" class="flex">
+          <div class="music__album_image">
+            <img src="./assets/images/songs/humnava.jpeg" alt="Humnava" />
+          </div>
+          <div class="music__album_details">
+            <h4 class="music__song_name">Humnava Mere</h4>
+            <p class="music__artist_name">Jubin Nautiyal</p>
+          </div>
+          <div class="music__album_icons flex">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-ban"></i>
+          </div>
+          <div id="volume__control" class="flex">
+            <div>
+              <i class="fa-solid fa-volume-high"></i>
+              <div class="progress__bar flex valign">
+                <div class="inner__progress_bar flex flex valign"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="audio__player" class="flex valign halign">
+          <div class="current__track_actions flex valign">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-backward-step"></i>
+            <div class="pause_play flex valign halign">
+              <i class="fa-solid fa-pause"></i>
+            </div>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-repeat"></i>
+          </div>
+          <div class="current__track_progress flex halign valign">
+            <div class="start_time">1:14</div>
+            <div class="progress__bar flex valign">
+              <div class="inner__progress_bar flex flex valign"></div>
+            </div>
+            <div class="end_time">4:44</div>
+          </div>
+        </div>
+        <div id="music__utilities" class="flex">
+          <i class="fa-solid fa-list"></i>
+          <i class="fa-solid fa-house-laptop"></i>
+          <div id="volume__control" class="flex">
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="progress__bar flex valign">
+              <div class="inner__progress_bar flex flex valign"></div>
+            </div>
+          </div>
+          <i class="fa-solid fa-expand"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
